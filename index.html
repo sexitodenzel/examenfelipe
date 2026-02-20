@@ -56,6 +56,8 @@
       background-image: url(imagen.jpg);
       background-size: cover;
       background-position: center;
+      display: flex;
+      position: relative;
     }
 
     .buttonNaranja {
@@ -69,6 +71,31 @@
       cursor: pointer;
       margin-right: 20px;
       font-size: 15px;
+    }
+
+    .textoImagen {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.618), transparent);
+    }
+
+    .textoImagen {
+      color: white;
+      font-size: 60px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    .separadorNaranja {
+      width: 5px;
+      height: 140px;
+      background-color: #ff5722;
+      margin-left: auto;
     }
   </style>
   <body>
@@ -96,6 +123,35 @@
       </div>
     </div>
 
-    <div class="imagenPoster"></div>
+    <div class="imagenPoster">
+      <div class="textoImagen">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <p class="tituloImagen">
+            We are Canada’s Open <br />
+            University
+          </p>
+          <div class="separadorNaranja"></div>
+          <p
+            style="
+              font-size: 15px;
+              font-weight: normal;
+              width: 400px;
+              text-align: start;
+            "
+          >
+            Our world-class accredited online degrees and courses are designed
+            so you can complete your education wherever and whenever it works
+            for you.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
